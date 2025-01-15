@@ -1,0 +1,123 @@
+/* Container général */
+.home-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Section Héro */
+  .hero {
+    background: #f0542c;
+    color: white;
+    text-align: center;
+    padding: 180px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #d43f00;
+  }
+  
+  /* Section des clubs */
+  .clubs {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    
+  }
+  
+  .clubs h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #004aad;
+  }
+  
+  /* Cards des clubs */
+  .club-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .club-card {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    color: #004aad;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .club-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .club-card h4 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #004aad;
+  }
+  
+  .club-card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .club-card button {
+    background-color: #ff5733;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .club-card button:hover {
+    background-color: #d43f00;
+  }
+  
+  /* Effet au survol des cards */
+  .club-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 768px) {
+    .club-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .club-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

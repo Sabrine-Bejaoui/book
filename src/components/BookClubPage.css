@@ -1,0 +1,98 @@
+.book-club-page {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  color: #004aad;
+  text-align: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row; /* Met les sections côte à côte */
+  gap: 20px; /* Espace entre les sections */
+  justify-content: center; /* Centrer les sections horizontalement */
+  align-items: flex-start; /* Aligner les sections en haut */
+}
+
+.add-book,
+.all-books {
+  flex: 1; /* Donne une taille équivalente aux deux sections */
+  margin: 0; /* Supprime la marge auto pour le centrage */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-book h2,
+.all-books h2 {
+  color: #f0542c;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #004aad;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #f0542c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d04325;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.book-item h3 {
+  margin: 0;
+  color: #004aad;
+}
+
+.favorite {
+  color: #f0542c;
+  font-weight: bold;
+}
+
+/* Style pour une meilleure réactivité sur les petits écrans */
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column; /* Les sections passent en colonne sur petits écrans */
+  }
+}
